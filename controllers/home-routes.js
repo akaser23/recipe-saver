@@ -4,7 +4,7 @@ const {
     Recipe
 } = require('../models')
 
-// RENDER HOMEPAGE W/ LISTED TO-DOS
+// RENDER HOMEPAGE W/ LISTED RECIPES
 router.get('/', (req, res) => {
     if (!req.session.loggedIn) {
         res.redirect('login')
